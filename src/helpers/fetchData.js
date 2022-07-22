@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-
-async function fetchData(setState) {
+async function fetchData(setState,url) {
     let pageNumber = 1;
     let itemsInPage;
     let data = []
