@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portf-react-challenge/static/css/main.2ead4d0f.css",
-    "main.js": "/portf-react-challenge/static/js/main.295f9199.js",
+    "main.js": "/portf-react-challenge/static/js/main.3a679ad6.js",
     "static/js/787.49e4e660.chunk.js": "/portf-react-challenge/static/js/787.49e4e660.chunk.js",
     "index.html": "/portf-react-challenge/index.html",
     "main.2ead4d0f.css.map": "/portf-react-challenge/static/css/main.2ead4d0f.css.map",
-    "main.295f9199.js.map": "/portf-react-challenge/static/js/main.295f9199.js.map",
+    "main.3a679ad6.js.map": "/portf-react-challenge/static/js/main.3a679ad6.js.map",
     "787.49e4e660.chunk.js.map": "/portf-react-challenge/static/js/787.49e4e660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ead4d0f.css",
-    "static/js/main.295f9199.js"
+    "static/js/main.3a679ad6.js"
   ]
 }
