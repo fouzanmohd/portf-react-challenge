@@ -2,9 +2,9 @@ import { Bar } from "@nivo/bar";
 import { axisBottom, axisLeft, theme, legends } from "./BarChartHelper";
 import getBeerSumPerDate from "../../helpers/getBeerSumPerDate";
 import BarChartData from "../../data/BarChartData";
-const BarChart = ({ beerData }) => {
+const BarChart = ({ beerData , url}) => {
 
-    const fullBeerData = beerData.flat()
+  const fullBeerData = beerData.flat()
     const barChartData = BarChartData(fullBeerData)
     const beerByMonthCount = {}
     barChartData.forEach(data=>{
@@ -12,7 +12,7 @@ const BarChart = ({ beerData }) => {
     })
 
     const result = getBeerSumPerDate(beerByMonthCount)
-   
+    console.log(result)
   return (
     <>
     
