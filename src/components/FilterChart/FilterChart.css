@@ -34,7 +34,9 @@
   padding-left: 25px;
 }
 
-.react-datepicker__navigation .react-datepicker__navigation--years .react-datepicker__navigation--years-previous{
+.react-datepicker__navigation
+  .react-datepicker__navigation--years
+  .react-datepicker__navigation--years-previous {
   background-color: aqua !important;
   color: red !important;
 }

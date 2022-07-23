@@ -1,3 +1,4 @@
+// function to provide total sum of beer per month data 
 const getBeerSumPerDate = (beerData) => {
   const result = [];
   Object.entries(beerData).map(([date, count]) =>

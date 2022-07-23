@@ -7,7 +7,7 @@ const FilterChart = () => {
   const [selectedStartDate, setSelectedStartDate] = useState("");
   const [selectedEndDate, setSelectedEndDate] = useState("");
   const [abvValue, setAbvValue] = useState("");
-  const [abvCondition, setAbvCondition] = useState(null);
+  const [abvCondition, setAbvCondition] = useState("");
   const handleAbvValue = (e) => {
     setAbvValue(e.target.value);
   };

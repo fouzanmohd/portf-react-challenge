@@ -1,4 +1,3 @@
-import "./App.css";
 import BarChart from "./components/BarChart/BarChart";
 import { useState, useEffect } from "react";
 import FilterChart from "./components/FilterChart/FilterChart";
