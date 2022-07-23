@@ -1,7 +1,8 @@
 import DatePicker from "react-datepicker";
+import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import "./FilterChart.css";
-import { useState } from "react";
+
 
 const FilterChart = () => {
   const [selectedStartDate, setSelectedStartDate] = useState("");

@@ -1,14 +1,15 @@
 import { Bar } from "@nivo/bar";
 import { axisBottom, axisLeft, theme, legends } from "./BarChartHelper";
 import getBeerSumPerDate from "../../helpers/getBeerSumPerDate";
-import { BarChartData, beerBrewedPerMonth } from "../../data/BarChartData";
+import { BarChartData, beerBrewedPerMonth,sortArrayByDate } from "../../data/BarChartData";
 
 const BarChart = ({ beerData, url }) => {
-  
+
   const fullBeerData = beerData.flat(); //collapsing the sub-arrays of data from multiple page into single array
   const barChartData = BarChartData(fullBeerData); // getting only the data required for Bar chart
   const beerByMonthCount = beerBrewedPerMonth(barChartData, {}); // counting the beers brewed per month
-  const chartData = getBeerSumPerDate(beerByMonthCount); // final formatted data for barchart
+  const chartData = getBeerSumPerDate(beerByMonthCount) //  formatted data for barchart
+  const chartDataSortedByDate = sortArrayByDate(chartData) // data sorted by date
 
   return (
     <>
@@ -16,7 +17,7 @@ const BarChart = ({ beerData, url }) => {
         width={1300}
         height={500}
         margin={{ top: 60, right: 100, bottom: 60, left: 80 }}
-        data={chartData}
+        data={chartDataSortedByDate}
         keys={["count"]}
         indexBy="date"
         innerPadding={0}
@@ -26,7 +27,6 @@ const BarChart = ({ beerData, url }) => {
         enableGridX={false}
         axisBottom={axisBottom}
         axisLeft={axisLeft}
-        //colorBy={colorBy}
         theme={theme}
         legends={legends}
       />
