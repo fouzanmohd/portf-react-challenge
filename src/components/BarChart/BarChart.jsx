@@ -10,10 +10,12 @@ const BarChart = ({ beerData, url }) => {
   const beerByMonthCount = beerBrewedPerMonth(barChartData, {}); // counting the beers brewed per month
   const chartData = getBeerSumPerDate(beerByMonthCount) //  formatted data for barchart
   const chartDataSortedByDate = sortArrayByDate(chartData) // data sorted by date
+  console.log(fullBeerData.length)
 
   return (
     <>
-      <Bar
+
+    {fullBeerData.length>0 ? <Bar
         width={1280}
         height={500}
         margin={{ top: 60, right: 100, bottom: 60, left: 80 }}
@@ -29,7 +31,8 @@ const BarChart = ({ beerData, url }) => {
         axisLeft={axisLeft}
         theme={theme}
         legends={legends}
-      />
+      /> : <h2 style={{textAlign:"center", marginTop:"210px"}}>No beer data Available for this search. Try again with different filters</h2>}
+      
     </>
   );
 };
