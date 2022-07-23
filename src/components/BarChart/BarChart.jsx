@@ -14,7 +14,7 @@ const BarChart = ({ beerData, url }) => {
   return (
     <>
       <Bar
-        width={1300}
+        width={1280}
         height={500}
         margin={{ top: 60, right: 100, bottom: 60, left: 80 }}
         data={chartDataSortedByDate}
